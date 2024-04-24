@@ -1,11 +1,299 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <title>Desafío Eevaluado - metodologías para la organización</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="./assets/images/logos/adl.png"
+          alt="logo Desafío Latam"
+          class="logo__image"
+        />
+        <h1 class="logo__titulo">Blog FrontEnd</h1>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- Novedades -->
+    <div class="title">
+      <h3 class="title__category">Novedades</h3>
+    </div>
+
+    <main class="novedades">
+      <!-- card vertical GRANDE -->
+      <section class="post novedades--feature">
+        <img
+          src="./assets/images/posts/bootstrap.png"
+          alt=""
+          class="post__img"
+        />
+        <div class="post__body">
+          <p class="post__date--big">22 Noviembre, 2022</p>
+          <p class="post__title--big">
+            Modifica el tema de Bootstrap con variables CSS
+          </p>
+          <span class="post__bottom">
+            <img
+              src="./assets/images/logos/adl.png"
+              alt=""
+              class="post__icon--big"
+            />
+            <span class="post__icon-text--big">Desafío Latam</span>
+          </span>
+        </div>
+      </section>
+
+      <!-- cards horizontales -->
+
+      <section class="cards">
+        <div class="cards--horizontal">
+          <img
+            src="./assets/images/posts/Herencia-JS.png"
+            alt=""
+            class="cards__img"
+          />
+          <div class="cards__body">
+            <p class="cards__date--small">24 Noviembre, 2022</p>
+            <p class="cards__title--small">Herencia en JavaScript</p>
+            <span class="post--bottom">
+              <img
+                src="./assets/images/logos/adl.png"
+                alt=""
+                class="post__icon--small"
+              />
+              <span class="post__icon-text--small">Desafío Latam</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="cards--horizontal">
+          <img
+            src="./assets/images/posts/Etiquetas-semánticas-HTML.png"
+            alt=""
+            class="cards__img"
+          />
+          <div class="cards__body">
+            <p class="cards__date--small">24 Noviembre, 2022</p>
+            <p class="cards__title--small">Etiquetas semánticas</p>
+            <span class="post--bottom">
+              <img
+                src="./assets/images/logos/adl.png"
+                alt=""
+                class="post__icon--small"
+              />
+              <span class="post__icon-text--small">Desafío Latam</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="cards--horizontal">
+          <img
+            src="./assets/images/posts/reactComponents.png"
+            alt=""
+            class="cards__img"
+          />
+          <div class="cards__body">
+            <p class="cards__date--small">24 Noviembre, 2022</p>
+            <p class="cards__title--small">Componentes React</p>
+            <span class="post--bottom">
+              <img
+                src="./assets/images/logos/adl.png"
+                alt=""
+                class="post__icon--small"
+              />
+              <span class="post__icon-text--small">Desafío Latam</span>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- titulos -->
+
+    <div class="title">
+      <h2 class="title__category">populares</h2>
+      <h2 class="title__category">Categorías</h2>
+    </div>
+
+    <!-- cards *4 -->
+
+    <section class="posts">
+      <article class="populares">
+        <div class="populares__cards">
+          <img
+            src="./assets/images/posts/vue-components.png"
+            alt=""
+            class="post__card-img"
+          />
+          <div class="post__body">
+            <p class="cards__date--small">22 Noviembre, 2022</p>
+            <p class="cards__title--small">Componentes Vue</p>
+            <span class="post--bottom">
+              <img
+                src="./assets/images/logos/adl.png"
+                alt=""
+                class="post__icon--small"
+              />
+              <span class="post__icon-text--small">Desafío Latam</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="populares__cards">
+          <img
+            src="./assets/images/posts/api-js.png"
+            alt=""
+            class="post__card-img"
+          />
+          <div class="post__body">
+            <p class="cards__date--small">22 Noviembre, 2022</p>
+            <p class="cards__title--small">Consumo de API con JavaScript</p>
+            <span class="post--bottom">
+              <img
+                src="./assets/images/logos/adl.png"
+                alt=""
+                class="post__icon--small"
+              />
+              <span class="post__icon-text--small">Desafío Latam</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="populares__cards">
+          <img
+            src="./assets/images/posts/sass.jpg"
+            alt=""
+            class="post__card-img"
+          />
+          <div class="post__body">
+            <p class="cards__date--small">22 Noviembre, 2022</p>
+            <p class="cards__title--small">CSS reutilizable con Sass</p>
+            <span class="post--bottom">
+              <img
+                src="./assets/images/logos/adl.png"
+                alt=""
+                class="post__icon--small"
+              />
+              <span class="post__icon-text--small">Desafío Latam</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="populares__cards">
+          <img
+            src="./assets/images/posts/bootstrap.png"
+            alt=""
+            class="post__card-img"
+          />
+          <div class="post__body">
+            <p class="cards__date--small">22 Noviembre, 2022</p>
+            <p class="cards__title--small">
+              Modifica el tema de Bootstrap con variables CSS
+            </p>
+            <span class="post--bottom">
+              <img
+                src="./assets/images/logos/adl.png"
+                alt=""
+                class="post__icon--small"
+              />
+              <span class="post__icon-text--small">Desafío Latam</span>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <!-- cards categorías logos -->
+
+      <div class="categorias">
+        <article class="categorias__icons icons--html">
+          <img
+            src="./assets/images/logos/html.png"
+            alt=""
+            class="categorias__img"
+          />
+          <span class="categorias__title">HTML</span>
+        </article>
+
+        <article class="categorias__icons icons--js">
+          <img
+            src="./assets/images/logos/js.png"
+            alt=""
+            class="categorias__img"
+          />
+          <span class="categorias__title">JavaScript</span>
+        </article>
+
+        <article class="categorias__icons icons--css">
+          <img
+            src="./assets/images/logos/css.png"
+            alt=""
+            class="categorias__img"
+          />
+          <span class="categorias__title">CSS</span>
+        </article>
+
+        <article class="categorias__icons icons--react">
+          <img
+            src="./assets/images/logos/react.png"
+            alt=""
+            class="categorias__img"
+          />
+          <span class="categorias__title">React</span>
+        </article>
+
+        <article class="categorias__icons icons--vue">
+          <img
+            src="./assets/images/logos/vue.png"
+            alt=""
+            class="categorias__img"
+          />
+          <span class="categorias__title">Vue</span>
+        </article>
+
+        <article class="categorias__icons icons--boots">
+          <img
+            src="./assets/images/logos/bootstrap-logo.png"
+            alt=""
+            class="categorias__img"
+          />
+          <span class="categorias__title">Bootstrap</span>
+        </article>
+        <span class="categorias__subtitle">Ver todas las categorías ></span>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer class="footer">
+      <div class="logo--footer">
+        <img
+          src="./assets/images/logos/adl.png"
+          alt="logo Desafío Latam"
+          class="logo__image"
+        />
+        <h1 class="logo__titulo">Blog FrontEnd</h1>
+      </div>
+      <span class="footer__text">Desafío Latam - 2023</span>
+    </footer>
+  </body>
 </html>
